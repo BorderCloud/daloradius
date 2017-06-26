@@ -24,12 +24,12 @@
 
 
 $configValues['DALORADIUS_VERSION'] = '0.9-9';
-$configValues['FREERADIUS_VERSION'] = '2';
+$configValues['FREERADIUS_VERSION'] = '3';
 $configValues['CONFIG_DB_ENGINE'] = 'mysqli';
 $configValues['CONFIG_DB_HOST'] = 'localhost';
 $configValues['CONFIG_DB_PORT'] = '3306';
 $configValues['CONFIG_DB_USER'] = 'root';
-$configValues['CONFIG_DB_PASS'] = '';
+$configValues['CONFIG_DB_PASS'] = 'jarvis';
 $configValues['CONFIG_DB_NAME'] = 'radius';
 $configValues['CONFIG_DB_TBL_RADCHECK'] = 'radcheck';
 $configValues['CONFIG_DB_TBL_RADREPLY'] = 'radreply';
@@ -103,16 +103,16 @@ $configValues['CONFIG_LOCATIONS'] =                     array(
         "Location Example 1" =>                 array(
                 "Engine"   => "mysql",
                 "Username" => "root",
-                "Password" => "",
+                "Password" => "jarvis",
                 "Database" => "radius",
-                "Hostname" => "127.0.0.1"
+                "Hostname" => "localhost"
         ),
 
         "Location Example 2" =>                 array(
                 "Engine"   => "mysql",
-                "Username" => "db_usertest",
-                "Password" => "db_passtest",
-                "Database" => "test_db1",
+                "Username" => "radius",
+                "Password" => "radiusJarvis",
+                "Database" => "radius",
                 "Hostname" => "localhost"
         )
 );
