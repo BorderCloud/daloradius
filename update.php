@@ -1815,7 +1815,7 @@ if (isset($_POST['submit'])) {
 		
                 <div id="header">
 
-                                <h1><a href="index.php"> <img src="images/daloradius_small.png" border=0/></a></h1>
+                                <h1><a href="index.php"> <img src="images/jarvis_small.gif" border=0/></a></h1>
                                 <h2>
                                 	Radius Management, Reporting and Accounting by <a href="http://www.enginx.com">Enginx</a>                                
                                 </h2>

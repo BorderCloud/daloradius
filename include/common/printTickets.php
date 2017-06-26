@@ -31,7 +31,7 @@ include('../../library/checklogin.php');
 $ticketInformation = "Information: To use this card, please connect <br/>".
 						"your device to the nearest ssid. Open your web <br/>".
 						"browser and enter each needed field.";
-$ticketLogoFile = "/images/daloradius_small.png";
+$ticketLogoFile = "/images/jarvis_small.gif";
 
 
 if (isset($_REQUEST['type']) && $_REQUEST['type'] == "batch") {
