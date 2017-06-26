@@ -22,7 +22,9 @@
 
 echo '
 
-<p><br/> '.$l['all']['copyright2'].'
+<p>
+<br/><a href="https://www.itescia.fr" target="_blank"><img src="images/itescia_logo.png"/></a> Authors : DE SOUSA Nicolas M2I MIS 2016-2017 - GENEST Julie M2I MIS 2016-2017 - MARCONNET Thibaut M2I MIS 2016-2017 
+<br/> '.$l['all']['copyright2'].'
 <br />
 </p>
 ';
