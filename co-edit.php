@@ -49,7 +49,18 @@
 			<tr>
 				<td>
 					<div style="min-height:60px;height:60px;overflow:auto;">
-						<?php echo shell_exec("iw dev wlp4s0b1 station get ".$_GET["MAC"]); ?>
+						<?php 
+							$result = shell_exec("iw dev wlp4s0b1 station dump"); 
+
+							$connexion = explode("Station ", $result);	//put in an array the result	
+							$i = 0; // init of $i
+
+							foreach($connexion as $val){
+								if(explode(" ", $val) == $_GET['MAC']){
+									echo "Station ".$val;
+								}				
+							}	
+						?>
 					</div>
 				</td>
 			</tr>
