@@ -47,15 +47,18 @@
 	$max = sizeof($tabResult);
 
 ?>	
-	<table border='0' class='table1'><thead><tr>
+	<table border='0' class='table1'>
+		<thead>
+			<tr>
 <?php
-	for($i = 0; $i < 6;$i++){		
+	for($i = 0; $i =< 6;$i++){		
 		echo "<th>".$tabResult[$i]."</th>";
 	}
 ?>
-	</tr></thead>
+			</tr>
+		</thead>
 <?php
-	for($i=6; $i<$max; $i++){
+	for($i=6; $i=<$max; $i++){
 		if($i%6 == 0)
 			echo "<tr>";
 		
