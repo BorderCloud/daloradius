@@ -42,8 +42,8 @@
 
 <?php 
 
-	$result = array_filter(shell_exec("arp"));
-	$tabResult = explode(" ", $result);	
+	$result = shell_exec("arp");
+	$tabResult = array_filter(explode(" ", $result));	
 	$max = sizeof($tabResult);
 
 ?>	
