@@ -15,7 +15,7 @@
  *
  *********************************************************************************************************
 *
- * Authors:	GENEST Julie <https://github.com/Nevenka3>
+ * Authors:	Liran Tal <liran@enginx.com>
  *
  *********************************************************************************************************
  */
@@ -31,7 +31,7 @@
 		
 		<div id="contentnorightbar">
 		
-		<h2 id="Intro"><a href="#" onclick="javascript:toggleShowDiv('helpPage')"><?php echo $l['Intro']['repco.php']; ?>
+		<h2 id="Intro"><a href="#" onclick="javascript:toggleShowDiv('helpPage')"><?=$l['Intro']['repco.php']?>
 		<h144>+</h144></a></h2>
 
 		<div id="helpPage" style="display:none;visibility:visible" >
