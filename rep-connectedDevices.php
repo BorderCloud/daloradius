@@ -1,4 +1,4 @@
-<?
+<?php
 /*
  *********************************************************************************************************
  * daloRADIUS - RADIUS Web Platform
@@ -52,12 +52,12 @@
 		</thead>
 
 	</table>
-<?
+<?php
 	include('include/config/logging.php');
 ?>
 		</div>
 		<div id="footer">
-<?
+<?php
         include 'page-footer.php';
 ?>
 
