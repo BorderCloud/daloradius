@@ -1115,6 +1115,7 @@ $l['Intro']['replogs.php'] = "Logs";
 $l['Intro']['rephb.php'] = "Heartbeat";
 $l['Intro']['rephbdashboard.php'] = "daloRADIUS NAS Dashboard";
 $l['Intro']['repco.php'] = "Jarvis Connected Objects Dashboard";
+$l['Intro']['repcoEdit.php'] = "Edit Jarvis Connected Objects";
 $l['Intro']['repbatch.php'] = "Batch";
 $l['Intro']['mngbatchlist.php'] = "Batch Sessions List";
 $l['Intro']['repbatchlist.php'] = "Batch Users List";
@@ -1290,8 +1291,8 @@ $l['helpPage']['mngradattributessearch'] = "";
 $l['helpPage']['mngradattributesdel'] = "";
 $l['helpPage']['mngradattributesimport'] = "";
 $l['helpPage']['mngimportusers'] = "";
-$l['helpPage']['repco'] = "Here you can see the list of connected devices which are in this moment connected on the WifiJarvis";
-
+$l['helpPage']['repco'] = "Here you can see the list of connected devices which are connecting to WifiJarvis or which have logged in at least once to WifiJarvis";
+$l['helpPage']['repcoEdit'] = "Here you can see the the log of the selected connected devices ";
 $l['helpPage']['msgerrorpermissions'] = "You do not have permissions to access the page. <br/>
 Please consult with your System Administrator. <br/>";
 

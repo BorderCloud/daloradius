@@ -31,7 +31,7 @@
 		
 		<div id="contentnorightbar">
 		
-		<h2 id="Intro"><a href="#" onclick="javascript:toggleShowDiv('helpPage')"><?php echo $l['Intro']['repco.php'];?>
+		<h2 id="Intro"><a href="#" onclick="javascript:toggleShowDiv('helpPage')"><?php echo $l['Intro']['repcoEdit.php'];?>
 		<h144>+</h144></a></h2>
 
 		<div id="helpPage" style="display:none;visibility:visible" >
@@ -40,48 +40,15 @@
 		</div>
 		<br/>
 
+		<?php echo $_GET['objectId'];?>
 
-	<table border='0' class='table1'>
-		<thead>
-			<tr>
-				<th>IP</th>
-				<th>MAC</th>
-				<th>Status</th>
-				<th>Actions</th>
-			</tr>
-		</thead>
-
-	</table>
-
-	<i>Example</i>
-	<table border='0' class='table1'>
-		<thead>
-			<tr>
-				<th>IP</th>
-				<th>MAC</th>
-				<th>Status</th>
-				<th>Show more</th>
-			</tr>
-		</thead>
-		<tr>
-			<td>10.42.0.64</td>
-			<td>5C-30-C5-75-1B-10</td>
-			<td><img src="/images/icons/userStatusActive"></td>
-			<td><a href="co-edit.php?objectId=Example1"><img src="/images/icons/configMaintenance.png"/></a></td>
-		</tr>
-		<tr>
-			<td>10.42.0.70</td>
-			<td>7E-30-V4-75-3A-10</td>
-			<td><img src="/images/icons/userStatusBlue.gif"></td>
-			<td><a href="co-edit.php?objectId=Example2"><img src="/images/icons/configMaintenance.png"></a></td>
-		</tr>
-		<tr>
-			<td>10.42.0.10</td>
-			<td>4P-30-C8-54-1G-14</td>
-			<td><img src="/images/icons/userStatusDisables.gif"></td>
-			<td><a href="co-edit.php?objectId=Example3"><img src="/images/icons/configMaintenance.png"></a></td>
-		</tr>
-	</table>
+		<b>Logs</b>
+		<br/>
+		<b>Onthology</b>
+		<br/>
+		<b>Error / Quarantine</b>
+		<br/>
+		<input style="float:right;" type="button">Back</input>
 <?php
 	include('include/config/logging.php');
 ?>
