@@ -50,8 +50,15 @@
 
 	foreach($tabResult as $val){
 		if (!empty($val)){
-			$tabFinal[$i] = $val; //add the value in the new array
-			$i++; //incrementation
+			if(explode(" ", $val)== false){
+				$tabFinal[$i] = $val; //add the value in the new array
+			}else{
+				$values = explode(" ", $val);
+				$tabFinal[$i] == $values[0];
+				$i++;
+				$tabFinal[$i] == $values[1];
+			}				
+			$i++; //incrementation			
 		}
 	}
 	
