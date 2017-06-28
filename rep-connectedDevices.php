@@ -51,18 +51,18 @@
 		<thead>
 			<tr>
 <?php
-	for($i = 0; $i =< 6;$i++){		
-		echo "<th>".$tabResult[$i]."</th>";
+	for($i = 0; $i < 6;$i++){		
+		echo "<th>".$i." ".$tabResult[$i]."</th>";
 	}
 ?>
 			</tr>
 		</thead>
 <?php
-	for($i=6; $i=<$max; $i++){
+	for($i=6; $i<$max; $i++){
 		if($i%6 == 0)
 			echo "<tr>";
 		
-		echo "<td>".$tabResult[$i]."</td>";
+		echo "<td>".$i." ".$tabResult[$i]."</td>";
 
 		if($i%6==5)
 			echo "</tr>";		
