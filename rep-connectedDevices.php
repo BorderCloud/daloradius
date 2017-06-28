@@ -40,32 +40,38 @@
 		</div>
 		<br/>
 
-<?php echo shell_exec("arp");
+<?php 
 
-exec("arp", $output);
-foreach ($output as $line) {
-    echo "$line\n";
-}
+	$result = shell_exec("arp");
+	$tabResult = explode(" ", $result);	
+	$max = sizeof($tabResult);
+
+?>	
+	<table border='0' class='table1'><thead><tr>
+<?php
+	for($i = 0; $i < 6;$i++){		
+		echo "<th>".$tabResult[$i]."</th>";
+	}
 ?>
+	</tr></thead>
+<?php
+	for($i=6; $i<$max; $i++){
+		if($i%6 == 0)
+			echo "<tr>";
+		
+		echo "<td>".$tabResult[$i]."</td>";
+
+		if($i%6==5)
+			echo "</tr>";		
+	}
+?>
+	</table>
 <br/>
 <br/>
 <?php 
-/*exec("iw dev wlp4s0b1 station dump", $output2);
-foreach ($output2 as $line2) {
-    echo "$line2\n";
-}*/
+//echo shell_exec("iw dev wlp4s0b1 station dump");
 ?>
-	<table border='0' class='table1'>
-		<thead>
-			<tr>
-				<th>IP</th>
-				<th>MAC</th>
-				<th>Status</th>
-				<th>Actions</th>
-			</tr>
-		</thead>
 
-	</table>
 	<br/><br/>
 
 	<i>Examples</i>
