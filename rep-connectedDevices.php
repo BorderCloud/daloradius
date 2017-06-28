@@ -50,10 +50,10 @@ foreach ($output as $line) {
 <br/>
 <br/>
 <?php 
-exec("iw dev wlp4s0b1 station dump", $output2);
+/*exec("iw dev wlp4s0b1 station dump", $output2);
 foreach ($output2 as $line2) {
     echo "$line2\n";
-}
+}*/
 ?>
 	<table border='0' class='table1'>
 		<thead>
