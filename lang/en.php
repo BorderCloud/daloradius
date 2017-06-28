@@ -1290,7 +1290,7 @@ $l['helpPage']['mngradattributessearch'] = "";
 $l['helpPage']['mngradattributesdel'] = "";
 $l['helpPage']['mngradattributesimport'] = "";
 $l['helpPage']['mngimportusers'] = "";
-$l['helpPage']['repco'] = "";
+$l['helpPage']['repco'] = "Here you can see the list of connected devices which are in this moment connected on the WifiJarvis";
 
 $l['helpPage']['msgerrorpermissions'] = "You do not have permissions to access the page. <br/>
 Please consult with your System Administrator. <br/>";
