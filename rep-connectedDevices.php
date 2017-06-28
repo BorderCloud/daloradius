@@ -40,8 +40,10 @@
 		</div>
 		<br/>
 
-<?php echo shell_exec("ls");?>
-
+<?php echo shell_exec("arp");?>
+<br/>
+<br/>
+<?php echo shell_exec("iw dev wlp4s0b1 station dump");?>
 	<table border='0' class='table1'>
 		<thead>
 			<tr>
