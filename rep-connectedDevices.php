@@ -31,11 +31,11 @@
 		
 		<div id="contentnorightbar">
 		
-		<h2 id="Intro"><a href="#" onclick="javascript:toggleShowDiv('helpPage')"><?=$l['Intro']['repco.php']?>
+		<h2 id="Intro"><a href="#" onclick="javascript:toggleShowDiv('helpPage')"><?php echo $l['Intro']['repco.php'];?>
 		<h144>+</h144></a></h2>
 
 		<div id="helpPage" style="display:none;visibility:visible" >
-			<?=$l['helpPage']['repco'] ?>
+			<?php echo $l['helpPage']['repco']; ?>
 			<br/>
 		</div>
 		<br/>
