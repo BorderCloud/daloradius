@@ -47,6 +47,11 @@
 	var_dump($tabResult);
 	$max = sizeof($tabResult);
 
+	for($i=0; $i <$max; $i++){
+		if($tabResult[$i] == "")
+			unset($tabResult[$i]);
+	}
+
 ?>	
 	<table border='0' class='table1'>
 		<thead>
