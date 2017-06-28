@@ -49,7 +49,7 @@
 			<tr>
 				<td>
 					<div style="min-height:60px;height:60px;overflow:auto;">
-						<?php echo shell_exec("iw dev wlan1 station get ".$_GET["MAC"]); ?>
+						<?php echo shell_exec("iw dev wlp4s0b1 station get ".$_GET["MAC"]); ?>
 					</div>
 				</td>
 			</tr>
