@@ -43,24 +43,25 @@
 <?php 
 
 	$result = shell_exec("arp"); //result of the command line
-	$tabResult = explode("\t", $result);	//put in an array the result	
+	$tabResult = explode(" ", $result);	//put in an array the result	
 	
 	$nbColumn = 6;
 	$i = 0; // init of $i
 
 	foreach($tabResult as $val){
-		if(explode("\n", $val)){
-			$values = explode("\n", $val);
-			for($j=0;$j<sizeof($values);$j++){
-				$tabFinal[$i] = $values[$j];
+		if (!empty($val)){
+			if(explode("\n", $val)){
+				$values = explode("\n", $val);
+				for($j=0;$j<sizeof($values);$j++){
+					$tabFinal[$i] = $values[$j];
+					$i++;
+				}
+			}else{
+				$tabFinal[$i] = $val; //add the value in the new array
 				$i++;
-			}
-		}else{
-			$tabFinal[$i] = $val; //add the value in the new array
-			$i++;
-		}				
+			}				
+		}
 	}
-
 	
 	$count = sizeof($tabFinal); //size of the new array
 	
