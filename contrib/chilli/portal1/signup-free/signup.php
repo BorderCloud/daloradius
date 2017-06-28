@@ -10,9 +10,9 @@
 
 $configValues['CONFIG_DB_ENGINE'] = "mysql";
 $configValues['CONFIG_DB_USER'] = "root";
-$configValues['CONFIG_DB_PASS'] = "";
+$configValues['CONFIG_DB_PASS'] = "jarvis";
 $configValues['CONFIG_DB_HOST'] = "127.0.0.1";
-$configValues['CONFIG_DB_NAME'] = "radius097";
+$configValues['CONFIG_DB_NAME'] = "radius";
 
 $configValues['CONFIG_GROUP_NAME'] = "somegroup";	/* the group name to add the user to */
 $configValues['CONFIG_GROUP_PRIORITY'] = 0;		/* an integer only! */
