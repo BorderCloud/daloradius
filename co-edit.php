@@ -32,7 +32,7 @@
 		<div id="contentnorightbar">
 		
 		<h2 id="Intro"><a href="#" onclick="javascript:toggleShowDiv('helpPage')"><?php echo $l['Intro']['repcoEdit.php'];?>
-		: <?php echo $_GET['objectIP'];?><h144>+</h144></a></h2>
+		: <?php echo $_GET['MAC'];?><h144>+</h144></a></h2>
 
 		<div id="helpPage" style="display:none;visibility:visible" >
 			<?php echo $l['helpPage']['repco']; ?>
@@ -49,7 +49,7 @@
 			<tr>
 				<td>
 					<div style="min-height:60px;height:60px;overflow:auto;">
-						[...]
+						<?php echo shell_exec("iw dev wlan1 station get ".$_GET["MAC"]); ?>
 					</div>
 				</td>
 			</tr>

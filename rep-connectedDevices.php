@@ -74,6 +74,8 @@
 		echo "<th>".$tabFinal[$i]."</th>"; //title column of the array
 	}
 ?>
+				<!--<th>Status</th>-->
+				<th>Show more</th>
 			</tr>
 		</thead>
 <?php
@@ -81,10 +83,13 @@
 		if($i%$nbColumn == 0)
 			echo "<tr>"; // new line in the array
 		
+		if($i%$nbColumn == 2)
+			$mac = $tabFinal[$i];
+
 		echo "<td>".$tabFinal[$i]."</td>"; //data of the array
 
 		if($i%$nbColumn==5)
-			echo "</tr>"; // end of the line in the array	
+			echo "<td><a href='co-edit.php?MAC=".$mac."'><img src='images/icons/configMaintenance.png'></a></td></tr>"; 	
 	}
 ?>
 	</table>
@@ -92,6 +97,7 @@
 <br/>
 <?php 
 //echo shell_exec("iw dev wlp4s0b1 station dump");
+
 ?>
 
 	<br/><br/>
