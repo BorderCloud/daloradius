@@ -52,14 +52,14 @@
 	}
 
 	$tabFinal = $tabResult; //save the "clean" array in a new array
-	$count = sizeof($tabFinal); //size of the new array
+	echo $count = sizeof($tabFinal); //size of the new array
 ?>	
 	<table border='0' class='table1'>
 		<thead>
 			<tr>
 <?php
 	for($i=0; $i < 6;$i++){		
-		echo "<th>".$tabFinal[$i]."</th>"; //title column of the array
+		echo "<th>".$i." ".$tabFinal[$i]."</th>"; //title column of the array
 	}
 ?>
 			</tr>
@@ -69,7 +69,7 @@
 		if($i%6 == 0)
 			echo "<tr>"; // new line in the array
 		
-		echo "<td>".$tabFinal[$i]."</td>"; //data of the array
+		echo "<td>".$i." ".$tabFinal[$i]."</td>"; //data of the array
 
 		if($i%6==5)
 			echo "</tr>"; // end of the line in the array	
