@@ -51,9 +51,14 @@
 			unset($tabResult[$i]); //delete the empty data in the array
 	}
 
-	$tabFinal = $tabResult; //save the "clean" array in a new array
-	echo $count = sizeof($tabFinal); //size of the new array
-	var_dump($tabFinal);
+	$i = 0; // init of $i
+	foreach($tabResult as $val){
+		$tabFinal[$i] = $val; //add the value with the good array key in another array
+		$i++; //incrementation
+	}
+	
+	$count = sizeof($tabFinal); //size of the new array
+	
 ?>	
 	<table border='0' class='table1'>
 		<thead>
