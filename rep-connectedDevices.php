@@ -42,19 +42,17 @@
 
 <?php 
 
-	$result = shell_exec("arp"); //result of the command line
+	echo $result = shell_exec("arp"); //result of the command line
 	$tabResult = explode(" ", $result);	//put in an array the result	
-	$max = sizeof($tabResult); //size of the array
-
-	for($i=0; $i <$max; $i++){
-		if(empty($tabResult[$i]))
-			unset($tabResult[$i]); //delete the empty data in the array
-	}
-
+	
+	$nbColumn = 6;
 	$i = 0; // init of $i
+
 	foreach($tabResult as $val){
-		$tabFinal[$i] = $val; //add the value with the good array key in another array
-		$i++; //incrementation
+		if (!empty($val)){
+			$tabFinal[$i] = $val; //add the value in the new array
+			$i++; //incrementation
+		}
 	}
 	
 	$count = sizeof($tabFinal); //size of the new array
@@ -64,20 +62,20 @@
 		<thead>
 			<tr>
 <?php
-	for($i=0; $i<6;$i++){		
-		echo "<th>".$i." ".$tabFinal[$i]."</th>"; //title column of the array
+	for($i=0; $i<$nbColumn;$i++){		
+		echo "<th>".$tabFinal[$i]."</th>"; //title column of the array
 	}
 ?>
 			</tr>
 		</thead>
 <?php
-	for($i=6; $i<$max; $i++){
-		if($i%6 == 0)
+	for($i=$nbColumn; $i<$count; $i++){
+		if($i%$nbColumn == 0)
 			echo "<tr>"; // new line in the array
 		
-		echo "<td>".$i." ".$tabFinal[$i]."</td>"; //data of the array
+		echo "<td>".$tabFinal[$i]."</td>"; //data of the array
 
-		if($i%6==5)
+		if($i%$nbColumn==5)
 			echo "</tr>"; // end of the line in the array	
 	}
 ?>
