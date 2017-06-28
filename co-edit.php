@@ -32,15 +32,13 @@
 		<div id="contentnorightbar">
 		
 		<h2 id="Intro"><a href="#" onclick="javascript:toggleShowDiv('helpPage')"><?php echo $l['Intro']['repcoEdit.php'];?>
-		<h144>+</h144></a></h2>
+		: <?php echo $_GET['objectIP'];?><h144>+</h144></a></h2>
 
 		<div id="helpPage" style="display:none;visibility:visible" >
 			<?php echo $l['helpPage']['repco']; ?>
 			<br/>
 		</div>
-		<br/>
-
-		<?php echo $_GET['objectIP'];?>
+		<br/>	
 
 		<table border='0' class='table1'>
 			<thead>
