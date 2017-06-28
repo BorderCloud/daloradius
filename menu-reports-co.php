@@ -12,14 +12,14 @@
 <script src="library/javascript/form-field-tooltip.js" type="text/javascript"></script>
  
 <body>
-<?
+<?php
 	include_once ("lang/main.php");
 ?>
 
 <div id="wrapper">
 <div id="innerwrapper">
 
-<?
+<?php
 	$m_active = "Reports";
     include_once ("include/menu/menu-items.php");
 	include_once ("include/menu/reports-subnav.php");
@@ -27,12 +27,12 @@
 
 <div id="sidebar">
 
-	<h2>Heartbeat</h2>
+	<h2>Jarvis</h2>
 		<ul class="subnav">
 
 		<h3>Connected Devices</h3>
 
-			<li><a href="rep-connectedDevices.php"><b>&raquo;</b><?=$l['button']['ConnectedDevices'] ?></a></li>
+			<li><a href="rep-connectedDevices.php"><b>&raquo;</b><?php echo $l['button']['ConnectedDevices']; ?></a></li>
 
 		</ul>
 
