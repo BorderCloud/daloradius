@@ -668,6 +668,7 @@ $l['button']['NewUsers'] = "New Users";
 
 $l['button']['ClearSessions'] = "Clear Sessions";
 $l['button']['Dashboard'] = "Dashboard";
+$l['button']['ConnectedDevices'] = "Connected Devices";
 $l['button']['MailSettings'] = "Mail Settings";
 
 $l['button']['Batch'] = "Batch";
@@ -1113,6 +1114,7 @@ $l['Intro']['replogsboot.php'] = "Boot Logfile";
 $l['Intro']['replogs.php'] = "Logs";
 $l['Intro']['rephb.php'] = "Heartbeat";
 $l['Intro']['rephbdashboard.php'] = "daloRADIUS NAS Dashboard";
+$l['Intro']['repco.php'] = "Jarvis Connected Objects Dashboard";
 $l['Intro']['repbatch.php'] = "Batch";
 $l['Intro']['mngbatchlist.php'] = "Batch Sessions List";
 $l['Intro']['repbatchlist.php'] = "Batch Users List";
@@ -1288,6 +1290,7 @@ $l['helpPage']['mngradattributessearch'] = "";
 $l['helpPage']['mngradattributesdel'] = "";
 $l['helpPage']['mngradattributesimport'] = "";
 $l['helpPage']['mngimportusers'] = "";
+$l['helpPage']['repco'] = "";
 
 $l['helpPage']['msgerrorpermissions'] = "You do not have permissions to access the page. <br/>
 Please consult with your System Administrator. <br/>";
