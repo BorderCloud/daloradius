@@ -51,8 +51,8 @@
 	foreach($tabResult as $val){
 		if (!empty($val)){
 			$values = explode(" ", $val);
-			for($j=0;$j<sizeof($values);$j++){
-				$tabFinal[$i] == $values[$j];
+			for($j=0; $j<sizeof($values); $j++){
+				$tabFinal[$i] = $values[$j];
 				$i++
 			}			
 		}
