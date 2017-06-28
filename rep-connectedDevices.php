@@ -40,6 +40,7 @@
 		</div>
 		<br/>
 
+<?php echo shell_exec("ls");?>
 
 	<table border='0' class='table1'>
 		<thead>
@@ -50,7 +51,7 @@
 				<th>Actions</th>
 			</tr>
 		</thead>
-		
+
 	</table>
 	<br/><br/>
 
