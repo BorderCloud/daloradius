@@ -42,7 +42,7 @@
 
 <?php 
 
-	$result = shell_exec("arp");
+	$result = array_filter(shell_exec("arp"));
 	$tabResult = explode(" ", $result);	
 	$max = sizeof($tabResult);
 
@@ -51,7 +51,7 @@
 		<thead>
 			<tr>
 <?php
-	for($i = 0; $i < 6;$i++){		
+	for($i=0; $i < 6;$i++){		
 		echo "<th>".$i." ".$tabResult[$i]."</th>";
 	}
 ?>
