@@ -44,14 +44,14 @@
 
 	$result = shell_exec("arp");
 	$tabResult = explode(" ", $result);	
-	var_dump($tabResult);
+	
 	$max = sizeof($tabResult);
 
 	for($i=0; $i <$max; $i++){
-		if($tabResult[$i] == "")
+		if(empty($tabResult[$i]))
 			unset($tabResult[$i]);
 	}
-
+	var_dump($tabResult);
 ?>	
 	<table border='0' class='table1'>
 		<thead>
