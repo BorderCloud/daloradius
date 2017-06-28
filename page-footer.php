@@ -22,6 +22,6 @@
 ?>
 <p>
 <b>Authors :</b> 2016-2017 Master Of Ingienerie of Science <a href="https://www.linkedin.com/in/nicolas-de-sousa-8651ba95/" target="_blank">DE SOUSA Nicolas</a>, <a href="https://github.com/Nevenka3" target="_blank">GENEST Julie</a> & <a href="https://www.linkedin.com/in/thibaut-marconnet-b6a54097/" target="_blank">MARCONNET Thibaut</a> 
-Powered by <a href="https://www.itescia.fr" target="_blank"><img style="float:right;" src="images/itescia_logo.png"/></a> <a href="https://github.com/BorderCloud" target="_blank"><img style="float:right;" src="images/bordercloud_logo.png"/></a> <a style="float:right;" href="http://www.daloradius.com" target="_blank"><img src="images/daloradius_small.png"/></a>
+Powered by <a href="https://www.itescia.fr" target="_blank"><img style="float:right; width:80px;" src="images/itescia_logo.png"/></a> <a href="https://github.com/BorderCloud" target="_blank"><img style="float:right; width:80px;" src="images/bordercloud_logo.png"/></a> <a style="float:right; width:80px; margin-right:80px;" href="http://www.daloradius.com" target="_blank"><img src="images/daloradius_small.png"/></a>
 <br/><?=$l['all']['copyright2']?><br/>
 </p>
