@@ -40,10 +40,21 @@
 		</div>
 		<br/>
 
-<?php echo shell_exec("arp");?>
+<?php echo shell_exec("arp");
+
+exec("arp", $output);
+foreach ($output as $line) {
+    echo "$line\n";
+}
+?>
 <br/>
 <br/>
-<?php echo shell_exec("iw dev wlp4s0b1 station dump");?>
+<?php 
+exec("iw dev wlp4s0b1 station dump", $output2);
+foreach ($output2 as $line2) {
+    echo "$line2\n";
+}
+?>
 	<table border='0' class='table1'>
 		<thead>
 			<tr>
