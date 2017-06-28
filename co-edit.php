@@ -48,7 +48,7 @@
 		<br/>
 		<b>Error / Quarantine</b>
 		<br/>
-		<input style="float:right;" type="button">Back</input>
+		<input style="float:right;" type="button" value="Back" onclick="window.history.go(-1); return false;"/>
 <?php
 	include('include/config/logging.php');
 ?>
