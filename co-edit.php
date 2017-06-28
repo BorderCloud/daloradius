@@ -40,13 +40,54 @@
 		</div>
 		<br/>
 
-		<?php echo $_GET['objectId'];?>
+		<?php echo $_GET['objectIP'];?>
 
-		<b>Logs</b>
+		<table border='0' class='table1'>
+			<thead>
+				<tr>
+					<th><b>Logs</b></th>					
+				</tr>
+			</thead>
+			<tr>
+				<td>
+					<div style="min-height:60px;height:60px;overflow:auto;">
+						[...]
+					</div>
+				</td>
+			</tr>
+		</table>
+		
 		<br/>
-		<b>Onthology</b>
+		<table border='0' class='table1'>
+			<thead>
+				<tr>
+					<th><b>Onthology</b></th>					
+				</tr>
+			</thead>
+			<tr>
+				<td>
+					<div style="min-height:60px;height:60px;overflow:auto;">
+						[...]
+					</div>
+				</td>
+			</tr>
+		</table>
+
 		<br/>
-		<b>Error / Quarantine</b>
+		<table border='0' class='table1'>
+			<thead>
+				<tr>
+					<th><b>Error / Quarantine</b></th>					
+				</tr>
+			</thead>
+			<tr>
+				<td>
+					<div style="min-height:60px;height:60px;overflow:auto;">
+						[...]
+					</div>
+				</td>
+			</tr>
+		</table>
 		<br/>
 		<input style="float:right;" type="button" value="Back" onclick="window.history.go(-1); return false;"/>
 <?php
