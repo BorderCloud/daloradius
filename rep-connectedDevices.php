@@ -42,7 +42,7 @@
 
 <?php 
 
-	echo $result = shell_exec("arp"); //result of the command line
+	$result = shell_exec("arp"); //result of the command line
 	$tabResult = explode(" ", $result);	//put in an array the result	
 	
 	$nbColumn = 6;
@@ -50,13 +50,13 @@
 
 	foreach($tabResult as $val){
 		if (!empty($val)){
-			if(explode(" ", $val)== false){
-				$tabFinal[$i] = $val; //add the value in the new array
-			}else{
+			if(explode(" ", $val)){
 				$values = explode(" ", $val);
 				$tabFinal[$i] == $values[0];
 				$i++;
-				$tabFinal[$i] == $values[1];
+				$tabFinal[$i] == $values[1];				
+			}else{
+				$tabFinal[$i] = $val; //add the value in the new array
 			}				
 			$i++; //incrementation			
 		}
