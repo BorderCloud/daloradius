@@ -66,7 +66,7 @@
 		<tr>
 			<td>10.42.0.64</td>
 			<td>5C-30-C5-75-1B-10</td>
-			<td><img src="images/icons/userStatusActive"></td>
+			<td><img src="images/icons/userStatusActive.gif"></td>
 			<td><a href="co-edit.php?objectId=Example1"><img src="images/icons/configMaintenance.png"/></a></td>
 		</tr>
 		<tr>
@@ -78,7 +78,7 @@
 		<tr>
 			<td>10.42.0.10</td>
 			<td>4P-30-C8-54-1G-14</td>
-			<td><img src="images/icons/userStatusDisables.gif"></td>
+			<td><img src="images/icons/userStatusDisabled.gif"></td>
 			<td><a href="co-edit.php?objectId=Example3"><img src="images/icons/configMaintenance.png"></a></td>
 		</tr>
 	</table>
