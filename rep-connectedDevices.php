@@ -50,15 +50,11 @@
 
 	foreach($tabResult as $val){
 		if (!empty($val)){
-			if(explode(" ", $val)){
-				$values = explode(" ", $val);
-				$tabFinal[$i] == $values[0];
-				$i++;
-				$tabFinal[$i] == $values[1];				
-			}else{
-				$tabFinal[$i] = $val; //add the value in the new array
-			}				
-			$i++; //incrementation			
+			$values = explode(" ", $val);
+			for($j=0;$j<sizeof($values);$j++){
+				$tabFinal[$i] == $values[$j];
+				$i++
+			}			
 		}
 	}
 	
