@@ -85,6 +85,9 @@
 					</div>
 				</td>
 			</tr>
+			<tr>
+				<input style="float:right;" type="button" value="Out of quarantine" onclick="if (confirm('Are you sure you want to authorize this object ?')) {/*Save it!*/} else {/* Do nothing!*/}"/>
+			</tr>
 		</table>
 		<br/>
 		<input style="float:right;" type="button" value="Back" onclick="window.history.go(-1); return false;"/>

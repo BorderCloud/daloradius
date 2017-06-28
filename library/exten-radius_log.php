@@ -26,9 +26,7 @@
  
 
 $logfile_loc = array();
-$logfile_loc[1] = '/var/log/freeradius/radius.log';
-$logfile_loc[2] = '/usr/local/var/log/radius/radius.log';
-$logfile_loc[3] = '/var/log/radius/radius.log';
+$logfile_loc[1] = './var/log/radius/radius.log';
 
 foreach ($logfile_loc as $tmp) {
 	if (file_exists($tmp)) { 
