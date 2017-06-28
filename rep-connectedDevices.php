@@ -53,12 +53,13 @@
 
 	$tabFinal = $tabResult; //save the "clean" array in a new array
 	echo $count = sizeof($tabFinal); //size of the new array
+	var_dump($tabFinal);
 ?>	
 	<table border='0' class='table1'>
 		<thead>
 			<tr>
 <?php
-	for($i=0; $i < 6;$i++){		
+	for($i=0; $i<6;$i++){		
 		echo "<th>".$i." ".$tabFinal[$i]."</th>"; //title column of the array
 	}
 ?>
