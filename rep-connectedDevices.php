@@ -50,11 +50,16 @@
 
 	foreach($tabResult as $val){
 		if (!empty($val)){
-			$values = explode(" ", $val);
-			for($j=0; $j<sizeof($values); $j++){
-				$tabFinal[$i] = $values[$j];
-				$i++
-			}			
+			if(explode(" ", $val)){
+				$values = explode(" ", $val);
+				for($j=0;$j<sizeof($values);$j++){
+					$tabFinal[$i] = $values[$j];
+					$i++;
+				}
+			}else{
+				$tabFinal[$i] = $val; //add the value in the new array
+				$i++;
+			}				
 		}
 	}
 	
